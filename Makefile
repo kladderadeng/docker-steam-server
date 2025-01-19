@@ -39,10 +39,10 @@ stable: clean
 	@cp -R source $(STAGING_DIR)
 	@cd $(STAGING_DIR) && \
 	 docker build \
-		-t thetestgame/steam:stable \
+		-t buedi/docker-steam-server:stable \
 		.
 	@echo
-	@echo 'Remember to push to hub: docker push thetestgame/steam:stable'
+	@echo 'Remember to push to hub: docker push buedi/docker-steam-server:stable'
 
 latest: clean
 	@echo 'Building steam ubuntu container using wine STABLE latest from winehq repo ...'
@@ -62,10 +62,10 @@ latest: clean
 	@cp -R source $(STAGING_DIR)
 	@cd $(STAGING_DIR) && \
 	 docker build \
-		-t thetestgame/steam:latest -t thetestgame/steam:winehq \
+		-t buedi/docker-steam-server:latest -t buedi/docker-steam-server:winehq \
 		.
 	@echo
-	@echo 'Remember to push to hub: docker push thetestgame/steam:latest'
+	@echo 'Remember to push to hub: docker push buedi/docker-steam-server:latest'
 
 experimental: clean
 	@echo 'Building steam ubuntu container using wine STAGING latest from winehq repo ...'
@@ -85,7 +85,7 @@ experimental: clean
 	@cp -R source $(STAGING_DIR)
 	@cd $(STAGING_DIR) && \
 	 docker build \
-		-t thetestgame/steam:experimental \
+		-t buedi/docker-steam-server:experimental \
 		.
 	@echo
 

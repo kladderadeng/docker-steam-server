@@ -1,8 +1,9 @@
 # [![steam][f8]®](https://developer.valvesoftware.com/wiki/SteamCMD) Steam (SteamCMD)
 
+> This is a fork of https://github.com/thetestgame/docker-steam-server for testing only
 > This is **NOT** an official Valve steam docker container.
 
-[![Build Steam Docker Image and Deploy](https://github.com/thetestgame/steam-docker/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/thetestgame/steam-docker/actions/workflows/ci.yml)
+[![Build Steam Docker Image and Deploy](https://github.com/kladderadeng/docker-steam-server/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/kladderadeng/docker-steam-server/actions/workflows/ci.yml)
 
 Generic Steam dedicated server using Docker.
 

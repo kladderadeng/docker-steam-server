@@ -1,5 +1,7 @@
 name: Build Steam Docker Image and Deploy
 on:
+  # Allow manual run
+  workflow_dispatch:
   # Run on every main branch push
   push:
     branches: [ "main" ]

@@ -39,8 +39,11 @@ if [ ${UPDATE_SERVER} -eq 1 ]; then
     +@sSteamCmdForcePlatformType ${PLATFORM} \
     +force_install_dir ${SERVER_DIR} \
     +login anonymous \
-    +app_update ${STEAM_APP_ID} \
-    ${STEAM_APP_EXTRAS} \
+    #+app_update ${STEAM_APP_ID} \
+    #${STEAM_APP_EXTRAS} \
+    +app_update ${STEAM_BETA_APP} \
+    +-beta ${STEAM_BETA_BRANCH} \
+    +-betapassword ${STEAM_BETA_PASSWORD} \
     +quit"
 fi
 
